@@ -1,7 +1,5 @@
 <h1>Lista-de-atividades-maispraTI-2</h1>
 <h2>Como executar os arquivos das atividades</h2>
-
-<p></p>
 <ol>
  <li><strong>Passo</strong>: Instalar o <a href="https://code.visualstudio.com/">VSCode</a> conforme o seu sistema operacional</li>
  <li><strong>Passo</strong>: Instalar o Node.js conforme o seu sistema operacional<br>
@@ -15,7 +13,7 @@
 		<li><strong>Passo 5</strong>: Execute o comando <code>node -v</code> no PowerShell para checar se está instalado corretamente e após isso execute o comando <code>npm -v</code>para checar se está instalado corretamente</li>
 		<li><strong>Passo 6</strong>: Continue seguindo o passo a passo</li>
 		<hr>
-		<strong>Se você utiliza Alguma distro Linux:<strong>
+		<strong>Se você utiliza Alguma distro Linux:</strong>
 		<li><strong>Passo 1</strong>: Execute no terminal o comando <code>$ sudo apt install nodejs</code> caso for Debian, Ubuntu e derivados, <code>$ sudo dnf install nodejs</code> caso for CentOS, Fedora ou RedHat, <code>$ sudo pacman -S nodejs</code> caso for Arch ou derivados e <code>$ sudo zypper install nodejs</code> caso for OpenSUSE</li>
 		<li><strong>Passo 2</strong>: Execute o comando <code>node -v</code> no Terminal para checar se está instalado corretamente e após isso execute o comando <code>npm -v</code>para checar se está instalado corretamente</li>
 		<li><strong>Passo 3</strong>: Continue o passo a passo</li>
