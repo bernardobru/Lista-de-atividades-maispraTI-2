@@ -10,6 +10,8 @@ function tempoDeVidaPerdido(cigarros, anos) {
     return parseInt(diasPerdidos);
 };
 
+console.log("VEJA QUANTOS ANOS DE VIDA UM FUMANTE PERDE");
+
 let cigarrosPorDia = prompt("Quantos cigarros você fuma por dia? ");
 let anosFumando = prompt("A quantos anos você fuma? ");
 

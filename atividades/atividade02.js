@@ -1,5 +1,6 @@
 const prompt = require('prompt-sync')();
 
+
 function radarVelocidade(velocidade){
     let limite = 80;
     if (velocidade > limite) {
@@ -12,6 +13,8 @@ function radarVelocidade(velocidade){
     };
     return "Velocidade dentro da permitida";
 };
+
+console.log("RADAR DE VELOCIDADE");
 
 let velocidadeCarro = parseFloat(prompt("Digite qual a velocidade do carro: "));
 console.log(radarVelocidade(velocidadeCarro));
