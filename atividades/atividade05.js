@@ -1,3 +1,5 @@
+console.log("JOKENPÔ");
+
 const prompt = require('prompt-sync')();
 const pedra = 0;
 const papel = 1;
@@ -6,7 +8,6 @@ const nome = prompt("Qual o seu nome? ");
 const vitoria1 = `${nome} venceu!`;
 const vitoria2 = "Jogador 2 venceu!";
 const empate = 'Empate!';
-const invalido = "Jogada inválida!";
 
 let jogada = parseInt(prompt("Qual a sua jogada?(0=pedra, 1=papel, 2=tesoura, 3=para o jogo)"));
 const jogadorUsuario = function () {
@@ -50,7 +51,7 @@ function joKenPo (jogadaPlayer1, jogadaPlayer2) {
     }else if (jogadaPlayer1 === jogadaPlayer2) {
         return empate;
     }else {
-        return invalido;
+        return "JOGADA INVÀLIDA!"; 
     };
 };
 while (jogada !== 3) {

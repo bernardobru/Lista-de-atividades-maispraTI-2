@@ -12,6 +12,6 @@ function adivinhaNumero (chute) {
 
 let numero;
 do  {
-    numero = parseInt(prompt("Adivinhe um número entre 1 a 5: "));;
+    numero = parseInt(prompt("Adivinhe um número entre 1 a 5: "));
     adivinhaNumero(numero);
-}while (numero !== numeroSorteado);
+} while (numero !== numeroSorteado);
