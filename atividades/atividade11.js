@@ -1,0 +1,14 @@
+const prompt = require('prompt-sync')();
+function progressaoAritmeticaESomaTermos (primeiroTermo, razao) {
+    let termos = primeiroTermo;
+    let soma = 0;
+    for (let i = 0; i < 10; i++) {
+        console.log(termos);
+        termos += razao;
+        soma += termos;
+    };
+    return `A soma dos 10 primeiros termos da progressão aritmética é ${soma}`;
+};
+let termoPA = parseInt(prompt("Insira o primeiro termo da progressão aritmética: "));
+let razaoPA = parseInt(prompt("Insira a razão da progressão aritmética: "));
+console.log(progressaoAritmeticaESomaTermos(termoPA, razaoPA));
