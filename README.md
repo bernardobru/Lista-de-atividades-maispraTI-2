@@ -27,7 +27,7 @@
  </li>
  <li><strong>Passo</strong>: Instalar o <a href="https://git-scm.com/downloads">Git</a> conforme o seu sistema operacional</li> 
  <li><strong>Passo</strong>: Clone o repositório no Git Bash no Windows ou no Terminal em distros Linux e no MacOS pelo comando <code>git clone https://github.com/bernardobru/Lista-de-atividades-maispraTI-2.git</code></li>
- <li><strong>Passo</strong>: Acesse a pasta "atividades"</li>
+ <li><strong>Passo</strong>: Abra a pasta "atividades" em seu VSCode</li>
  <li><strong>Passo</strong>: Instalar o Prompt-Sync, executando no terminal do VSCode o comando <code>npm install prompt-sync</code></li>
  <li><strong>Passo</strong>: Executar no terminal do VSCode o comando <code>node atividadeXX.js</code> para executar a atividade</li>
 </ol>
