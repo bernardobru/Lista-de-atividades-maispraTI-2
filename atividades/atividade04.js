@@ -1,6 +1,9 @@
 const prompt = require('prompt-sync')();
 
 function verificaTriangulo (...segmentos) {
+    if (segmentos[0] <= 0 || segmentos[1] <= 0 || segmentos[2] <= 0) {
+        return "Insira valores válidos!"
+    }
     if (segmentos[1] + segmentos[2] > segmentos[0] && segmentos[0] + segmentos[1] > segmentos[2] && segmentos[0] + segmentos[2] > segmentos[1]) {
         return "Esses segmentos de reta formam um triângulo";
     }else {

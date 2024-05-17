@@ -23,7 +23,7 @@ function recebeValores () {
         media = soma / contador;
         continuar = prompt("Quer continuar inserindo valores(s/n)?");
     } while (continuar === 's' || continuar === 'S');
-    let vetor = [`Somatorio: ${soma}\nMenor Valor: ${menor}\nmedia dos valores: ${media.toFixed(2)}\nQuantos pares: ${numerosPares}`];
+    let vetor = [`Somatorio: ${soma}\nMenor Valor: ${menor}\nMédia dos valores: ${media.toFixed(2)}\nQuantos pares: ${numerosPares}`];
     return vetor.toString();
 };
 console.log(recebeValores());

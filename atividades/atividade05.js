@@ -51,7 +51,7 @@ function joKenPo (jogadaPlayer1, jogadaPlayer2) {
     }else if (jogadaPlayer1 === jogadaPlayer2) {
         return empate;
     }else {
-        return "JOGADA INVÀLIDA!"; 
+        return "JOGADA INVÁLIDA!"; 
     };
 };
 while (jogada !== 3) {

@@ -6,14 +6,9 @@ function tempoDeVidaPerdido(cigarros, anos) {
     let cigarrosPorAno = cigarros * 365;
     let minutosPorAno = minutosPerdido * cigarrosPorAno;
     let diasPerdidosPorAno = minutosPorAno / minutosDia;
-    let diasPerdidos = diasPerdidosPorAno * anos;
-    return parseInt(diasPerdidos);
+    let diasPerdidosTotal = Math.floor(diasPerdidosPorAno * anos)
+    return `Você perdeu ${diasPerdidosTotal} dias de vida`;
 };
-
-console.log("VEJA QUANTOS ANOS DE VIDA UM FUMANTE PERDE");
-
 let cigarrosPorDia = prompt("Quantos cigarros você fuma por dia? ");
 let anosFumando = prompt("A quantos anos você fuma? ");
-
-let resposta = tempoDeVidaPerdido(cigarrosPorDia, anosFumando);
-console.log(resposta);
+console.log(tempoDeVidaPerdido(cigarrosPorDia, anosFumando));

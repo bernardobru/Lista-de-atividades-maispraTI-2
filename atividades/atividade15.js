@@ -13,6 +13,6 @@ function revelaPares () {
             vetorIndice.push(pares);
         };
     };
-    return `Vetor:(${vetor})\nOs elementos ${vetorResultado} estão, respectivamente, nas posições [${vetorIndice}]`;
+    return `Vetor:(${vetor})\nOs elementos pares ${vetorResultado} estão, respectivamente, nas posições [${vetorIndice}]`;
 };
 console.log(revelaPares());

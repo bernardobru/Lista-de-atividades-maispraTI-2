@@ -17,9 +17,9 @@ function aluguelCarro (carro, dias, kilometros) {
     if (carro === 'luxo') {
         precoDias = dias * 150;
         if (kilometros < 200) {
-            precoKilometros = kilometros * 0,30;
+            precoKilometros = kilometros * 0.30;
         } else {
-            precoKilometros = kilometros * 0,25;
+            precoKilometros = kilometros * 0.25;
         };
     };
     let precoTotal =parseFloat(precoDias + precoKilometros);
