@@ -29,5 +29,4 @@ function mostraNegativo (a) {
     }
     return `A quantidade de elementos negativos em cada linha da matriz é de:\n${C[0]} na primeira linha\n${C[1]} na segunda linha\n${C[2]} na terceira linha\n${C[3]} na quarta linha\n${C[4]} na quinta linha\n${C[5]} na sexta linha`;
 }
-//console.log(imprimeMatriz(criaMatriz));
 console.log(mostraNegativo(criaImprimeMatriz()));
