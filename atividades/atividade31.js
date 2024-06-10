@@ -1,4 +1,5 @@
 const prompt = require('prompt-sync')();
+const A = parseInt(prompt("Digite um número inteiro: "));
 function criaMatriz() {
     const linhas = 30;
     const colunas = 30;
@@ -6,27 +7,35 @@ function criaMatriz() {
     for (let i = 0; i < linhas; i++) {
         matriz[i] = new Array;
         for (let j = 0; j < colunas; j++) {
-            matriz[i][j] = Math.round(Math.random() * 10);
+            matriz[i][j] = Math.round(Math.random() * 50);
         }
     }
     return matriz;
 }
 function valorNaMatriz(A, V) {
-    let contador = 0;
-    let X = []
+    let contadorIgual = 0;
+    let contadorDiferente = 0;
+    let X = new Array();
     for (let i = 0; i < V.length; i++) {
+        X[i] = new Array
         for (let j = 0; j < V[i].length; j++) {
             if (V[i][j] === A) {
-                contador++;
+                contadorIgual++;
             }
             if (V[i][j] !== A) {
-                
-                X[j] = new Array();
-
-
+                contadorDiferente++;
+                X[i][j] = V[i][j];
+            } else {
+                X[i][j] = null;
             }
         }
     } 
-    return contador;
+    return [X, contadorIgual];
 }
-console.log(valorNaMatriz(3, criaMatriz()));
+function imprimeResultado(resultado) {
+    console.table(resultado[0]);
+    console.log(`O número ${A} apareceu ${resultado[1]} vezes na matriz`)
+}
+const matriz = criaMatriz();
+const matrizDiferente = valorNaMatriz(A, matriz);
+imprimeResultado(matrizDiferente);
