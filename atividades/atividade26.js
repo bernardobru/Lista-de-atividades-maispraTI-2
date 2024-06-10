@@ -18,11 +18,18 @@ function criaMatriz2() {
     }
     return matriz
 }
-
+function multiplicaMatriz(m1, m2) {
+    for (let linhas = 0; linhas < 5; linhas++) {
+        for (let colunas = 0; colunas < 5; colunas++) {
+            produto = m1[linhas][colunas] * m2[colunas][linhas];
+            console.log(produto);
+        }
+    }
+}
 function imprimeMatriz(matriz) {
     console.table(matriz);
     return;
 }
-imprimeMatriz(criaMatriz1());
-imprimeMatriz(criaMatriz2());
+//imprimeMatriz(criaMatriz1());
+//imprimeMatriz(criaMatriz2());
 imprimeMatriz(multiplicaMatriz(criaMatriz1(), criaMatriz2()));
