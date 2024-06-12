@@ -36,5 +36,7 @@ function matrizModificada(matriz) {
 }
 const matriz = criaMatriz();
 const matrizDividida = matrizModificada(matriz);
+console.log("Matriz: ");
 console.table(matriz);
+console.log("Matriz com os elementos divididos: ");
 console.table(matrizDividida);
