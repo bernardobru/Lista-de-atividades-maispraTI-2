@@ -6,47 +6,48 @@ function criaVetor(tamanho) {
     }
     return vetor;
 }
-const vetor = criaVetor(6);
-function somaElementos(vetor) {
-    let soma = 0;
-    vetor.forEach((elemento) => {soma += elemento});
-    return soma;
-}
-function produtoElementos(vetor) {
-    produto = 1;
-    vetor.forEach((elemento) => {produto *= elemento});
-    return produto;
-}
-function mediaElementos(vetor) {
-    let soma = 0;
-    vetor.forEach((elemento) => {soma += elemento});
-    let media = soma / vetor.length;
-    return media.toFixed(2);
-}
-function ordenaElementosCrescente(vetor) {
-    
-}
-function realizarOperacao(operacao) {
-    switch(operacao) {
+function realizarOperacao() {
+    const escolha = parseInt(prompt("Escolha uma operação(1-soma os elementos 2-multiplicar os elementos 3-média dos elementos 4-ordenar em ordem crescente 5-mostrar o vetor) "))
+    switch(escolha) {
         case 1:
-            somaElementos(vetor);
+            let soma = 0;
+            vetor.forEach((elemento) => {soma += elemento});
+            console.log(soma);
             break;
         case 2:
-            produtoElementos(vetor);
+            produto = 1;
+            vetor.forEach((elemento) => {produto *= elemento});
+            console.log(produto);
             break;
         case 3:
-            mediaElementos(vetor);
+            let somaMedia = 0;
+            vetor.forEach((elemento) => {somaMedia += elemento});
+            let media = somaMedia / vetor.length;
+            console.log(media.toFixed(2));
             break;
         case 4:
-            ordenaElementosCrescente(vetor);
+            for (let i = 0; i < vetor.length; i++) {
+                let trocou = false;
+                for (let j = 0; j < vetor.length - 1; j++) {
+                    if (vetor[j] > vetor[j + 1]) {
+                        let temp = vetor[j];
+                        vetor[j] = vetor[j + 1];
+                        vetor[j + 1] = temp;
+                        trocou = true;
+                    }
+                }
+                if (!trocou) {
+                    break;
+                }
+            }
+            console.log(`[${vetor}]`);
             break;
         case 5:
-            mostraVetor(vetor);
-            break;
+            console.log(`[${vetor}]`);
         default:
             break;
     }
     return;
 }
-console.log(vetor);
-console.log(ordenaElementosCrescente(vetor));
+const vetor = criaVetor(6);
+realizarOperacao();
