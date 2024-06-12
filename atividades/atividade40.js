@@ -13,23 +13,24 @@ function ganhadorDaAposta(vetorAposta) {
     let acertos = 0;
     let acertoLot = 0;
     let j = 0;
-        for (let apostas of vetorAposta) {
-            for (let i = 0; i < apostas.length; i++) { 
-                if (apostas[i] === loteria[i]) {
-                    acertos++;
-                }
-            }    
-            acertoLot = acertos;
-            acertos = 0;
-            j++;
-            if (acertoLot === loteria.length) {
-                console.log(`Ganhador: Aposta ${j}`);
-                break;
-            } 
-        }
-        if (acertoLot !== loteria.length) {
-            console.log("Não há vencedores");
-        }
+    for (let apostas of vetorAposta) {
+        for (let i = 0; i < apostas.length; i++) { 
+            if (apostas[i] === loteria[i]) {
+                acertos++;
+            }
+        }    
+        acertoLot = acertos;
+        acertos = 0;
+        j++;
+        if (acertoLot === loteria.length) {
+            console.log(`Ganhador: Aposta ${j}`);
+            break;
+        } 
     }
+    if (acertoLot !== loteria.length) {
+        console.log("Não há vencedores");
+    }
+    return;
+}
 const aposta = criaAposta(50)
-console.log(ganhadorDaAposta(aposta));
+ganhadorDaAposta(aposta);
