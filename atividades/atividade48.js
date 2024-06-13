@@ -28,7 +28,7 @@ function combinaEstoque(obj1, obj2) {
 }
 function imprimeObjeto(objeto) {
     for (let propriedades in objeto) {
-        console.log(`Idade de ${propriedades}: ${objeto[propriedades]}`);
+        console.log(`${propriedades}: ${objeto[propriedades]}`);
     }
     return;
 }
